@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+    <title>Digital Chocolate — Games & Apps Publisher</title>
+    <meta
+      name="description"
+      content="Digital Chocolate is an independent publisher of games and apps — some blockchain-powered, some not. Makers of Kaboom! and Planes."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,800;1,9..144,800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="assets/kaboom-icon.png" />
+  </head>
+  <body>
+    <div class="ambient"></div>
+
+    <nav class="top">
+      <div class="inner">
+        <a href="index.html" class="brand">
+          <span class="brand-mark">DC</span>
+          <span>Digital Chocolate</span>
+        </a>
+        <div class="links">
+          <a href="#games">Games</a>
+          <a href="#about">Studio</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <header class="hero">
+      <div class="wrap">
+        <span class="eyebrow"><span class="dot"></span> Independent Games &amp; Apps Publisher</span>
+        <h1 class="title">
+          We make games<br />
+          and <span class="italic">small things</span>.
+        </h1>
+        <p class="lede">
+          Digital Chocolate is an independent publisher of games and apps — some
+          blockchain-powered, some not. We build small, sharp products that feel good
+          in the hand, then ship them where people actually are.
+        </p>
+        <div class="hero-meta">
+          <div><strong>2</strong><span>Titles live</span></div>
+          <div><strong>Mobile</strong><span>First &amp; foremost</span></div>
+          <div><strong>2026</strong><span>Founded</span></div>
+        </div>
+      </div>
+    </header>
+
+    <section class="games" id="games">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Our titles</h2>
+          <span class="count">02 — LIVE</span>
+        </div>
+
+        <div class="game-grid">
+          <article class="card kaboom">
+            <div class="top">
+              <div class="top-fill"><div class="top-bg"></div></div>
+              <div class="top-icon"><img src="assets/kaboom-icon.png" alt="Kaboom! icon" /></div>
+            </div>
+            <div class="body">
+              <h3>Kaboom!</h3>
+              <div class="tagline">
+                <span class="pill">On-chain Mines</span>
+                <span>Provably-fair casino, instant cashout</span>
+              </div>
+              <p class="desc">
+                A neon take on the classic Mines casino game — pick tiles, dodge bombs, cash out
+                before greed catches up. Every bet and reveal is a real on-chain transaction.
+                Provably fair, no custody, no waiting.
+              </p>
+              <ul class="feat-list">
+                <li>Mainnet bets settled by an on-chain program — no IOUs, no off-chain ledger</li>
+                <li>VRF-driven mine placement, verifiable per round</li>
+                <li>Mobile Wallet Adapter — sign with Seed Vault or any installed wallet</li>
+                <li>Instant cashout straight to your wallet</li>
+              </ul>
+              <div class="meta-row">
+                <span><strong>Genre</strong> · Casino / Arcade</span>
+                <span><strong>Package</strong> · gg.playkaboom.twa</span>
+                <span><strong>Web</strong> · www.playkaboom.gg</span>
+              </div>
+              <div class="cta-row">
+                <a class="btn primary" href="https://www.playkaboom.gg/install" target="_blank" rel="noopener">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v13"/><path d="m7 12 5 5 5-5"/><path d="M5 21h14"/></svg>
+                  Install on Seeker
+                </a>
+                <a class="btn ghost" href="https://www.playkaboom.gg" target="_blank" rel="noopener">
+                  Play on web
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card planes">
+            <div class="top">
+              <div class="top-fill"><div class="top-bg"></div></div>
+              <div class="top-icon"><img src="assets/planes-icon.png" alt="Planes icon" /></div>
+            </div>
+            <div class="body">
+              <h3>Planes</h3>
+              <div class="tagline">
+                <span class="pill">Arcade · Leaderboard</span>
+                <span>Dodge, collect, climb the on-chain ranks</span>
+              </div>
+              <p class="desc">
+                A modern arcade dodger with one job: stay alive longer than everyone else.
+                Buy coin packs, submit your run, and watch your name climb a leaderboard
+                whose every entry is verified on-chain.
+              </p>
+              <ul class="feat-list">
+                <li>On-chain verified leaderboard — every submission is a real mainnet tx</li>
+                <li>Coin packs paid via Mobile Wallet Adapter</li>
+                <li>Built natively in Unity 6 for mobile</li>
+                <li>Edge function verifies each score before the row lands in the DB</li>
+              </ul>
+              <div class="meta-row">
+                <span><strong>Genre</strong> · Arcade</span>
+                <span><strong>Package</strong> · com.techavtranew.planes</span>
+                <span><strong>Engine</strong> · Unity 6</span>
+              </div>
+              <div class="cta-row">
+                <a class="btn primary" href="solanadappstore://details?id=com.techavtranew.planes">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v13"/><path d="m7 12 5 5 5-5"/><path d="M5 21h14"/></svg>
+                  Install on Seeker
+                </a>
+                <a class="btn ghost" href="#about">
+                  Learn more
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="wrap">
+        <div class="about-grid">
+          <div>
+            <h2>An indie publisher for the <em>modern phone</em> era.</h2>
+            <p>
+              We make tiny, sharp products — the kind you launch standing in a queue.
+              Some are pure games. Some hook into a wallet. The thread is the same:
+              one idea, one minute, one clean execution.
+            </p>
+            <p>
+              When a title is on-chain, we mean it: real transactions, real custody,
+              real settlement — no off-chain points pretending to be a token. When a
+              title isn't, we focus on feel, fairness, and respect for your time.
+            </p>
+          </div>
+          <div class="pillars">
+            <div class="pillar">
+              <div class="ico">01 — SMALL BY DESIGN</div>
+              <h4>One idea, done right</h4>
+              <p>One mechanic, one screen, one minute of fun — then back to your day.</p>
+            </div>
+            <div class="pillar">
+              <div class="ico">02 — MOBILE FIRST</div>
+              <h4>Built for the phone in your hand</h4>
+              <p>Touch, performance, and battery are first-class — not afterthoughts.</p>
+            </div>
+            <div class="pillar">
+              <div class="ico">03 — HONEST TECH</div>
+              <h4>Real where it counts</h4>
+              <p>If a title is on-chain, every move settles for real. No theatrics.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="wrap foot-grid">
+        <div class="legal">© 2026 DIGITAL CHOCOLATE · ALL RIGHTS RESERVED</div>
+        <div class="foot-links">
+          <a href="index.html#games">Games</a>
+          <a href="index.html#about">Studio</a>
+          <a href="contact.html">Contact</a>
+          <a href="terms.html">Terms</a>
+          <a href="privacy.html">Privacy</a>
+          <a href="cookies.html">Cookies</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

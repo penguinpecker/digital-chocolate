@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+    <title>Contact — Digital Chocolate</title>
+    <meta name="description" content="Get in touch with Digital Chocolate — support, press, partnerships." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,800;1,9..144,800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="assets/kaboom-icon.png" />
+  </head>
+  <body>
+    <div class="ambient"></div>
+
+    <nav class="top">
+      <div class="inner">
+        <a href="index.html" class="brand">
+          <span class="brand-mark">DC</span>
+          <span>Digital Chocolate</span>
+        </a>
+        <div class="links">
+          <a href="index.html#games">Games</a>
+          <a href="index.html#about">Studio</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <main class="wrap">
+      <article class="page">
+        <span class="eyebrow"><span class="dot"></span> Get in touch</span>
+        <h1>Say hello.</h1>
+        <div class="updated">WE READ EVERY MESSAGE</div>
+
+        <p>
+          Bug report, partnership pitch, press inquiry, or just want to tell us what
+          you'd like us to make next — drop us a line. We typically reply within
+          two business days.
+        </p>
+
+        <h2>Direct email</h2>
+        <p>
+          For the fastest response, email
+          <a class="inline" href="mailto:hello@digitalchocolate.games">hello@digitalchocolate.games</a>.
+          Press: <a class="inline" href="mailto:press@digitalchocolate.games">press@digitalchocolate.games</a>.
+          Support for a specific game: include the title and your wallet address (never your seed phrase).
+        </p>
+
+        <h2>Send a message</h2>
+        <form class="contact-form" action="mailto:hello@digitalchocolate.games" method="post" enctype="text/plain">
+          <div class="row">
+            <div>
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" required autocomplete="name" />
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required autocomplete="email" />
+            </div>
+          </div>
+          <div>
+            <label for="topic">Topic</label>
+            <input id="topic" name="topic" type="text" placeholder="Support, press, partnership…" />
+          </div>
+          <div>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <div>
+            <button type="submit" class="btn primary">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2 11 13"/><path d="M22 2l-7 20-4-9-9-4 20-7Z"/></svg>
+              Send message
+            </button>
+          </div>
+        </form>
+
+        <div class="callout">
+          Never share your seed phrase, private key, or wallet password — with us or
+          anyone else. We will never ask for them.
+        </div>
+      </article>
+    </main>
+
+    <footer>
+      <div class="wrap foot-grid">
+        <div class="legal">© 2026 DIGITAL CHOCOLATE · ALL RIGHTS RESERVED</div>
+        <div class="foot-links">
+          <a href="index.html#games">Games</a>
+          <a href="index.html#about">Studio</a>
+          <a href="contact.html">Contact</a>
+          <a href="terms.html">Terms</a>
+          <a href="privacy.html">Privacy</a>
+          <a href="cookies.html">Cookies</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
