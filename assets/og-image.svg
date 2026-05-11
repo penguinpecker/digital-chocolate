@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#281610"/>
+      <stop offset="1" stop-color="#1A0E08"/>
+    </linearGradient>
+    <radialGradient id="glowGold" cx="0.18" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#E6B85A" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#E6B85A" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowPurple" cx="0.85" cy="0.3" r="0.5">
+      <stop offset="0" stop-color="#C084FF" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#C084FF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="goldFace2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFE19E"/>
+      <stop offset="0.45" stop-color="#FFD075"/>
+      <stop offset="1" stop-color="#A36F2C"/>
+    </linearGradient>
+    <linearGradient id="gloss2" x1="0" y1="0" x2="0.7" y2="0.9">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.55"/>
+      <stop offset="0.55" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="goldText" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFD884"/>
+      <stop offset="1" stop-color="#E6B85A"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glowGold)"/>
+  <rect width="1200" height="630" fill="url(#glowPurple)"/>
+
+  <!-- Chocolate piece mark, scaled and translated -->
+  <g transform="translate(110, 200) scale(0.92)">
+    <path d="M 66 38 L 190 38 L 218 66 L 218 190 L 190 218 L 66 218 L 38 190 L 38 66 Z"
+          fill="url(#goldFace2)"
+          stroke="#7A4A22" stroke-width="2.2" stroke-linejoin="round"/>
+    <path d="M 66 38 L 190 38 L 218 66 L 218 90 L 90 90 L 90 218 L 66 218 L 38 190 L 38 66 Z"
+          fill="url(#gloss2)"/>
+    <path d="M 70 46 L 188 46 L 210 68 L 210 188 L 188 210 L 70 210 L 46 188 L 46 68 Z"
+          fill="none" stroke="#FFF1C6" stroke-opacity="0.35" stroke-width="1.2"/>
+    <text x="128" y="170"
+          text-anchor="middle"
+          font-family="'Fraunces', 'Georgia', serif"
+          font-style="italic" font-weight="900"
+          font-size="138" letter-spacing="-9"
+          fill="#2A1208">DC</text>
+  </g>
+
+  <!-- Wordmark -->
+  <text x="430" y="290"
+        font-family="'Fraunces', 'Georgia', serif"
+        font-style="italic" font-weight="800"
+        font-size="92" letter-spacing="-3"
+        fill="#F4EAD8">Digital</text>
+  <text x="430" y="385"
+        font-family="'Fraunces', 'Georgia', serif"
+        font-style="italic" font-weight="800"
+        font-size="92" letter-spacing="-3"
+        fill="url(#goldText)">Chocolate</text>
+
+  <!-- Tagline -->
+  <text x="432" y="450"
+        font-family="'Inter', 'Helvetica', sans-serif"
+        font-weight="500"
+        font-size="22" letter-spacing="0.5"
+        fill="#D9CBB0">Games &amp; apps for the modern phone.</text>
+
+  <!-- Footer chip -->
+  <g transform="translate(430, 490)">
+    <rect width="14" height="14" rx="7" fill="#FFD884"/>
+    <text x="26" y="12"
+          font-family="'JetBrains Mono', 'Menlo', monospace"
+          font-size="13" letter-spacing="2.4"
+          fill="#E6B85A">INDEPENDENT PUBLISHER · EST. 2026</text>
+  </g>
+</svg>

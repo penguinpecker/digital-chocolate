@@ -77,18 +77,11 @@ nav.top .inner {
   letter-spacing: -0.01em;
 }
 .brand-mark {
-  width: 32px;
-  height: 32px;
-  border-radius: 8px;
-  background: linear-gradient(135deg, var(--gold-bright), var(--gold) 40%, var(--cocoa-600));
-  display: grid;
-  place-items: center;
-  font-family: "Fraunces", serif;
-  font-style: italic;
-  font-weight: 800;
-  color: var(--cocoa-900);
-  font-size: 17px;
-  box-shadow: inset 0 -8px 14px rgba(0, 0, 0, 0.25), 0 1px 0 rgba(255, 255, 255, 0.1);
+  width: 36px;
+  height: 36px;
+  border-radius: 9px;
+  display: block;
+  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.35));
 }
 nav .links {
   display: flex;

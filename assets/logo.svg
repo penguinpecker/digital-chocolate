@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="Digital Chocolate">
+  <defs>
+    <linearGradient id="goldFace" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFE19E"/>
+      <stop offset="0.45" stop-color="#FFD075"/>
+      <stop offset="1" stop-color="#A36F2C"/>
+    </linearGradient>
+    <linearGradient id="cocoaBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3A201A"/>
+      <stop offset="1" stop-color="#1A0E08"/>
+    </linearGradient>
+    <linearGradient id="gloss" x1="0" y1="0" x2="0.7" y2="0.9">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.55"/>
+      <stop offset="0.55" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="innerShade" cx="0.7" cy="0.85" r="0.7">
+      <stop offset="0" stop-color="#5A3110" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#5A3110" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="emboss" x="-5%" y="-5%" width="110%" height="110%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="1.2" result="b"/>
+      <feOffset in="b" dx="0" dy="-1" result="hi"/>
+      <feFlood flood-color="#FFF0CC" flood-opacity="0.55"/>
+      <feComposite in2="hi" operator="in" result="hiCol"/>
+      <feOffset in="b" dx="0" dy="1.6" result="lo"/>
+      <feFlood flood-color="#2A1208" flood-opacity="0.85"/>
+      <feComposite in2="lo" operator="in" result="loCol"/>
+      <feMerge>
+        <feMergeNode in="loCol"/>
+        <feMergeNode in="hiCol"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Rounded backdrop -->
+  <rect x="0" y="0" width="256" height="256" rx="56" fill="url(#cocoaBg)"/>
+
+  <!-- Chamfered chocolate piece (octagon-ish) -->
+  <g>
+    <path d="M 66 38 L 190 38 L 218 66 L 218 190 L 190 218 L 66 218 L 38 190 L 38 66 Z"
+          fill="url(#goldFace)"
+          stroke="#7A4A22" stroke-width="2.2" stroke-linejoin="round"/>
+    <!-- Inner shade (lower-right depth) -->
+    <path d="M 66 38 L 190 38 L 218 66 L 218 190 L 190 218 L 66 218 L 38 190 L 38 66 Z"
+          fill="url(#innerShade)"/>
+    <!-- Gloss highlight (upper-left) -->
+    <path d="M 66 38 L 190 38 L 218 66 L 218 90 L 90 90 L 90 218 L 66 218 L 38 190 L 38 66 Z"
+          fill="url(#gloss)"/>
+    <!-- Subtle inner bevel rim -->
+    <path d="M 70 46 L 188 46 L 210 68 L 210 188 L 188 210 L 70 210 L 46 188 L 46 68 Z"
+          fill="none" stroke="#FFF1C6" stroke-opacity="0.35" stroke-width="1.2"/>
+  </g>
+
+  <!-- DC monogram, debossed look -->
+  <g filter="url(#emboss)">
+    <text x="128" y="170"
+          text-anchor="middle"
+          font-family="'Fraunces', 'Georgia', 'Times New Roman', serif"
+          font-style="italic"
+          font-weight="900"
+          font-size="138"
+          letter-spacing="-9"
+          fill="#2A1208">DC</text>
+  </g>
+</svg>
