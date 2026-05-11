@@ -12,19 +12,15 @@
       <stop offset="0" stop-color="#C084FF" stop-opacity="0.18"/>
       <stop offset="1" stop-color="#C084FF" stop-opacity="0"/>
     </radialGradient>
-    <linearGradient id="chocBody2" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#A85D26"/>
-      <stop offset="0.5" stop-color="#6F381C"/>
-      <stop offset="1" stop-color="#3A1A0F"/>
-    </linearGradient>
-    <linearGradient id="caramel2" x1="0" y1="0" x2="0" y2="1">
+    <linearGradient id="goldFace2" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="#FFE19E"/>
-      <stop offset="1" stop-color="#C48F3C"/>
+      <stop offset="0.45" stop-color="#FFD075"/>
+      <stop offset="1" stop-color="#A36F2C"/>
     </linearGradient>
-    <radialGradient id="cheekGloss2" cx="0.3" cy="0.28" r="0.55">
-      <stop offset="0" stop-color="#FFD7B0" stop-opacity="0.55"/>
-      <stop offset="1" stop-color="#FFD7B0" stop-opacity="0"/>
-    </radialGradient>
+    <linearGradient id="gloss2" x1="0" y1="0" x2="0.7" y2="0.9">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.55"/>
+      <stop offset="0.55" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
     <linearGradient id="goldText" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="#FFD884"/>
       <stop offset="1" stop-color="#E6B85A"/>
@@ -35,73 +31,44 @@
   <rect width="1200" height="630" fill="url(#glowGold)"/>
   <rect width="1200" height="630" fill="url(#glowPurple)"/>
 
-  <!-- Confetti -->
-  <g>
-    <circle cx="120" cy="120" r="5" fill="#FFD884"/>
-    <circle cx="990" cy="160" r="4" fill="#C084FF"/>
-    <circle cx="160" cy="500" r="4" fill="#5CC8FF"/>
-    <circle cx="1060" cy="540" r="5" fill="#FF8B6B"/>
-    <rect x="80" y="320" width="9" height="9" rx="2" fill="#FFD884" transform="rotate(35 84 324)"/>
-    <rect x="1100" y="380" width="7" height="7" rx="1.5" fill="#C084FF" transform="rotate(-25 1103 383)"/>
-    <circle cx="60" cy="220" r="3" fill="#FFD884"/>
-    <circle cx="1020" cy="80" r="3" fill="#FFD884"/>
-  </g>
-
-  <!-- Mascot, scaled up -->
-  <g transform="translate(110, 180) scale(1.05) rotate(-7 128 128)">
-    <ellipse cx="128" cy="221" rx="74" ry="6.5" fill="#000" opacity="0.45"/>
-    <path d="M 150 36 L 220 36 L 220 100
-             C 200 96, 184 86, 174 72
-             C 162 62, 154 50, 150 36 Z"
-          fill="url(#caramel2)" stroke="#A36F2C" stroke-width="1.5"/>
-    <path d="M 76 36
-             L 150 36
-             C 154 50, 162 62, 174 72
-             C 184 86, 200 96, 220 100
-             L 220 178
-             Q 220 214, 184 214
-             L 72 214
-             Q 36 214, 36 178
-             L 36 72
-             Q 36 36, 76 36 Z"
-          fill="url(#chocBody2)" stroke="#1A0907" stroke-width="3"/>
-    <ellipse cx="86" cy="86" rx="46" ry="34" fill="url(#cheekGloss2)"/>
-    <ellipse cx="92" cy="128" rx="16" ry="21" fill="#FFFFFF"/>
-    <ellipse cx="95" cy="133" rx="8.5" ry="11" fill="#1A0907"/>
-    <circle cx="98" cy="128" r="3.2" fill="#FFFFFF"/>
-    <ellipse cx="158" cy="128" rx="16" ry="21" fill="#FFFFFF"/>
-    <ellipse cx="161" cy="133" rx="8.5" ry="11" fill="#1A0907"/>
-    <circle cx="164" cy="128" r="3.2" fill="#FFFFFF"/>
-    <ellipse cx="68" cy="160" rx="12" ry="6" fill="#FF8B6B" opacity="0.55"/>
-    <ellipse cx="178" cy="160" rx="12" ry="6" fill="#FF8B6B" opacity="0.55"/>
-    <path d="M 92 168 Q 124 200, 162 168 Q 144 188, 124 188 Q 104 188, 92 168 Z"
-          fill="#1A0907"/>
-    <path d="M 110 180 Q 124 196, 142 180 Q 128 188, 110 180 Z"
-          fill="#FF8B6B"/>
-    <rect x="120" y="172" width="6" height="7" rx="1.5" fill="#FFFFFF"/>
+  <!-- Chocolate piece mark, scaled and translated -->
+  <g transform="translate(110, 200) scale(0.92)">
+    <path d="M 66 38 L 190 38 L 218 66 L 218 190 L 190 218 L 66 218 L 38 190 L 38 66 Z"
+          fill="url(#goldFace2)"
+          stroke="#7A4A22" stroke-width="2.2" stroke-linejoin="round"/>
+    <path d="M 66 38 L 190 38 L 218 66 L 218 90 L 90 90 L 90 218 L 66 218 L 38 190 L 38 66 Z"
+          fill="url(#gloss2)"/>
+    <path d="M 70 46 L 188 46 L 210 68 L 210 188 L 188 210 L 70 210 L 46 188 L 46 68 Z"
+          fill="none" stroke="#FFF1C6" stroke-opacity="0.35" stroke-width="1.2"/>
+    <text x="128" y="170"
+          text-anchor="middle"
+          font-family="'Fraunces', 'Georgia', serif"
+          font-style="italic" font-weight="900"
+          font-size="138" letter-spacing="-9"
+          fill="#2A1208">DC</text>
   </g>
 
   <!-- Wordmark -->
-  <text x="490" y="290"
+  <text x="430" y="290"
         font-family="'Fraunces', 'Georgia', serif"
         font-style="italic" font-weight="800"
-        font-size="98" letter-spacing="-3"
+        font-size="92" letter-spacing="-3"
         fill="#F4EAD8">Digital</text>
-  <text x="490" y="395"
+  <text x="430" y="385"
         font-family="'Fraunces', 'Georgia', serif"
         font-style="italic" font-weight="800"
-        font-size="98" letter-spacing="-3"
+        font-size="92" letter-spacing="-3"
         fill="url(#goldText)">Chocolate</text>
 
   <!-- Tagline -->
-  <text x="492" y="460"
+  <text x="432" y="450"
         font-family="'Inter', 'Helvetica', sans-serif"
         font-weight="500"
-        font-size="24" letter-spacing="0.5"
-        fill="#D9CBB0">Small games. Big bites.</text>
+        font-size="22" letter-spacing="0.5"
+        fill="#D9CBB0">Games &amp; apps for the modern phone.</text>
 
   <!-- Footer chip -->
-  <g transform="translate(492, 500)">
+  <g transform="translate(430, 490)">
     <rect width="14" height="14" rx="7" fill="#FFD884"/>
     <text x="26" y="12"
           font-family="'JetBrains Mono', 'Menlo', monospace"
