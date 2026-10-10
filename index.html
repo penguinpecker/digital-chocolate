@@ -2,207 +2,410 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
-    <title>Digital Chocolate — Games & Apps Publisher</title>
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,viewport-fit=cover"
+    />
+    <title>Digital Chocolate — Small screens. Big adventures.</title>
     <meta
       name="description"
-      content="Digital Chocolate is an independent publisher of games and apps — some blockchain-powered, some not. Makers of Kaboom! and Planes."
+      content="An independent mobile game studio. Discover PenguCrush: Beyond the Horizon, Hexit for Solana Seeker, and Planes."
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="canonical" href="https://digitalchocolate.co/" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,800;1,9..144,800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap"
-      rel="stylesheet"
+      rel="preload"
+      href="assets/fonts/rubik-latin-800-normal.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
     />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
-    <meta property="og:title" content="Digital Chocolate — Games &amp; Apps Publisher" />
-    <meta property="og:description" content="Independent publisher of games and apps — some blockchain-powered, some not. Makers of Kaboom! and Planes." />
-    <meta property="og:image" content="assets/og-image.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon-32.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/apple-touch-icon.png"
+    />
+    <meta name="theme-color" content="#F45A42" />
+    <meta
+      property="og:title"
+      content="Digital Chocolate — Small screens. Big adventures."
+    />
+    <meta
+      property="og:description"
+      content="Meet the games from our independent mobile studio: PenguCrush, Hexit, and Planes."
+    />
+    <meta
+      property="og:image"
+      content="https://digitalchocolate.co/assets/og-image.png"
+    />
+    <meta property="og:image:width" content="1500" />
+    <meta property="og:image:height" content="500" />
+    <meta
+      property="og:image:alt"
+      content="Digital Chocolate game studio, in cream lettering on coral"
+    />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://digitalchocolate.co" />
+    <meta property="og:url" content="https://digitalchocolate.co/" />
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@digitchocolate" />
     <meta name="twitter:title" content="Digital Chocolate" />
-    <meta name="twitter:description" content="Games &amp; apps for the modern phone." />
-    <meta name="twitter:image" content="assets/og-image.png" />
+    <meta
+      name="twitter:description"
+      content="Small screens. Big adventures. An independent mobile game studio."
+    />
+    <meta
+      name="twitter:image"
+      content="https://digitalchocolate.co/assets/og-image.png"
+    />
+    <meta
+      name="twitter:image:alt"
+      content="Digital Chocolate game studio, in cream lettering on coral"
+    />
   </head>
-  <body>
-    <div class="ambient"></div>
-
-    <nav class="top">
+  <body class="home">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <nav class="top" aria-label="Main navigation">
       <div class="inner">
-        <a href="index.html" class="brand">
-          <img class="brand-mark" src="assets/logo.svg" alt="Digital Chocolate logo" width="36" height="36" />
-          <span>Digital Chocolate</span>
-        </a>
+        <a href="index.html" class="brand" aria-label="Digital Chocolate home"
+          ><img
+            class="brand-wordmark"
+            src="assets/brand/wordmark.png"
+            alt="Digital Chocolate"
+            width="2020"
+            height="778"
+        /></a>
         <div class="links">
-          <a href="#games">Games</a>
-          <a href="#about">Studio</a>
-          <a href="contact.html">Contact</a>
+          <a href="#games">Our games</a><a href="#about">The studio</a
+          ><a class="nav-contact" href="contact.html"
+            >Say hello <span aria-hidden="true">↗</span></a
+          >
         </div>
       </div>
     </nav>
-
-    <header class="hero">
-      <div class="wrap">
-        <span class="eyebrow"><span class="dot"></span> Independent Games &amp; Apps Publisher</span>
-        <h1 class="title">
-          We make games<br />
-          and <span class="italic">small things</span>.
-        </h1>
-        <p class="lede">
-          Digital Chocolate is an independent publisher of games and apps — some
-          blockchain-powered, some not. We build small, sharp products that feel good
-          in the hand, then ship them where people actually are.
-        </p>
-        <div class="hero-meta">
-          <div><strong>2</strong><span>Titles live</span></div>
-          <div><strong>Mobile</strong><span>First &amp; foremost</span></div>
-          <div><strong>2026</strong><span>Founded</span></div>
-        </div>
-      </div>
-    </header>
-
-    <section class="games" id="games">
-      <div class="wrap">
-        <div class="section-head">
-          <h2>Our titles</h2>
-          <span class="count">02 — LIVE</span>
-        </div>
-
-        <div class="game-grid">
-          <article class="card kaboom">
-            <div class="top">
-              <div class="top-fill"><div class="top-bg"></div></div>
-              <div class="top-icon"><img src="assets/kaboom-icon.png" alt="Kaboom! icon" /></div>
+    <main id="main">
+      <header class="hero">
+        <div class="wrap hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">
+              <span class="dot" aria-hidden="true"></span> Independent game
+              studio
+            </p>
+            <h1>Small screens.<br />Big adventures.</h1>
+            <p class="lede">
+              A curious little studio making games with a whole lot of
+              personality. Made for your phone. Played your way.
+            </p>
+            <a class="btn cream" href="#games"
+              >Find your next game <span aria-hidden="true">↘</span></a
+            >
+            <div class="hero-note">
+              <span aria-hidden="true">✳</span> A little more play in your
+              every day.
             </div>
-            <div class="body">
-              <h3>Kaboom!</h3>
-              <div class="tagline">
-                <span class="pill">On-chain Mines</span>
-                <span>Provably-fair Mines, instant cashout</span>
+          </div>
+          <div
+            class="hero-art"
+            aria-label="Kip from PenguCrush, with the Hexit and Planes game icons"
+            role="img"
+          >
+            <div class="hero-orbit" aria-hidden="true"></div>
+            <img
+              class="hero-kip"
+              src="assets/games/pengucrush-kip.webp"
+              alt=""
+              width="1024"
+              height="1536"
+              fetchpriority="high"
+            />
+            <div class="orbit-icon hexit-icon">
+              <img
+                src="assets/games/hexit-icon.png"
+                alt=""
+                width="512"
+                height="512"
+              /><span>HEXIT</span>
+            </div>
+            <div class="orbit-icon planes-icon">
+              <img
+                src="assets/planes-icon.png"
+                alt=""
+                width="512"
+                height="512"
+              /><span>PLANES</span>
+            </div>
+            <span class="hero-sticker" aria-hidden="true"
+              >MADE<br />TO PLAY.</span
+            >
+          </div>
+        </div>
+        <div class="hero-bottom wrap">
+          <span>GOOD GAMES. LITTLE SCREENS. BIG PERSONALITIES.</span
+          ><a href="#games" aria-label="Scroll to our games"
+            >SCROLL TO EXPLORE <span aria-hidden="true">↓</span></a
+          >
+        </div>
+      </header>
+      <section class="games" id="games" aria-labelledby="games-title">
+        <div class="wrap">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">Meet the lineup</p>
+              <h2 id="games-title">Pick your kind of play.</h2>
+            </div>
+            <p>Three different worlds.<br />One playful little studio.</p>
+          </div>
+          <article
+            class="game-feature"
+            id="pengucrush"
+            aria-labelledby="pengu-title"
+          >
+            <div class="pengu-scene">
+              <img
+                class="pengu-landscape"
+                src="assets/games/pengucrush-frosthaven.webp"
+                alt="The island scenery of PenguCrush: Beyond the Horizon"
+                width="1024"
+                height="1536"
+                loading="lazy"
+              />
+              <div class="pengu-wordmark" aria-hidden="true">
+                <span>PENGU</span><strong>CRUSH</strong
+                ><small>BEYOND THE HORIZON</small>
               </div>
-              <p class="desc">
-                A neon take on the classic Mines game — pick tiles, dodge bombs, cash out
-                before greed catches up. Every bet and reveal is a real on-chain transaction.
-                Provably fair, no custody, no waiting.
+              <img
+                class="pengu-character"
+                src="assets/games/pengucrush-kip.webp"
+                alt="Kip, the red-hatted penguin expedition companion"
+                width="1024"
+                height="1536"
+                loading="lazy"
+              />
+              <span class="scene-label">PACK LIGHT. CRUSH BIG.</span>
+            </div>
+            <div class="feature-copy">
+              <div class="game-topline">
+                <img
+                  class="game-icon"
+                  src="assets/games/pengucrush-icon.png"
+                  alt="PenguCrush September expedition app icon"
+                  width="512"
+                  height="512"
+                  loading="lazy"
+                /><span class="game-category">MATCH-3 ADVENTURE</span>
+              </div>
+              <h3 id="pengu-title">PenguCrush</h3>
+              <p class="game-subtitle">Beyond the Horizon</p>
+              <p>
+                Meet Kip, Rook and Juno. Match colourful treasures, rescue
+                stranded chicks and bring the beacons back to life on an
+                expedition across ten extraordinary islands.
               </p>
-              <ul class="feat-list">
-                <li>Mainnet bets settled by an on-chain program — no IOUs, no off-chain ledger</li>
-                <li>VRF-driven mine placement, verifiable per round</li>
-                <li>Mobile Wallet Adapter — sign with Seed Vault or any installed wallet</li>
-                <li>Instant cashout straight to your wallet</li>
-              </ul>
-              <div class="meta-row">
-                <span><strong>Genre</strong> · Arcade</span>
-                <span><strong>Package</strong> · gg.playkaboom.twa</span>
-                <span><strong>Web</strong> · www.playkaboom.gg</span>
+              <div class="game-facts">
+                <div><strong>100</strong><span>clever levels</span></div>
+                <div><strong>10</strong><span>islands to explore</span></div>
+                <div><strong>3</strong><span>penguin companions</span></div>
               </div>
-              <div class="cta-row">
-                <a class="btn primary" href="https://www.playkaboom.gg/install" target="_blank" rel="noopener">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v13"/><path d="m7 12 5 5 5-5"/><path d="M5 21h14"/></svg>
-                  Install on Seeker
-                </a>
-                <a class="btn ghost" href="https://www.playkaboom.gg" target="_blank" rel="noopener">
-                  Play on web
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg>
-                </a>
+              <ul class="feature-list">
+                <li>
+                  Nine board shapes, shifting tides and multi-stage finales
+                </li>
+                <li>Daily quests, collectible relics and star-chest rewards</li>
+                <li>
+                  Offline play, free retries and progress saved on your device
+                </li>
+              </ul>
+              <div class="game-actions">
+                <a class="btn ink" href="pengucrush.html"
+                  >Meet the expedition <span aria-hidden="true">↗</span></a
+                ><span class="release-note">Android · In development</span>
               </div>
             </div>
           </article>
-
-          <article class="card planes">
-            <div class="top">
-              <div class="top-fill"><div class="top-bg"></div></div>
-              <div class="top-icon"><img src="assets/planes-icon.png" alt="Planes icon" /></div>
-            </div>
-            <div class="body">
-              <h3>Planes</h3>
-              <div class="tagline">
-                <span class="pill">Arcade · Leaderboard</span>
-                <span>Dodge, collect, climb the on-chain ranks</span>
+          <div class="game-grid">
+            <article class="game-card" id="hexit" aria-labelledby="hexit-title">
+              <a
+                class="game-cover hexit-cover"
+                href="https://hexit-app.vercel.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Explore Hexit's website (opens in a new tab)"
+                ><img
+                  src="assets/games/hexit-cover.png"
+                  alt="Hexit: a live price line crossing a honeycomb game board"
+                  width="1500"
+                  height="500"
+                  loading="lazy"
+                /><span class="cover-link" aria-hidden="true">↗</span></a
+              >
+              <div class="game-body">
+                <div class="game-topline">
+                  <span class="game-category">TAP-TRADING GAME</span
+                  ><span class="platform">Solana Seeker</span>
+                </div>
+                <h3 id="hexit-title">Hexit</h3>
+                <p class="game-subtitle">Pick a hex. Catch the move.</p>
+                <p>
+                  A live price line, a board of hexagons, and a decision to
+                  make. Choose where the market will move and watch your
+                  prediction play out. Quick rounds built around timing and
+                  touch.
+                </p>
+                <div class="game-actions">
+                  <a
+                    class="text-link"
+                    href="https://hexit-app.vercel.app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Explore Hexit <span aria-hidden="true">↗</span></a
+                  ><span class="release-note">Coming to Solana Seeker</span>
+                </div>
               </div>
-              <p class="desc">
-                A modern arcade dodger with one job: stay alive longer than everyone else.
-                Buy coin packs, submit your run, and watch your name climb a leaderboard
-                whose every entry is verified on-chain.
-              </p>
-              <ul class="feat-list">
-                <li>On-chain verified leaderboard — every submission is a real mainnet tx</li>
-                <li>Coin packs paid via Mobile Wallet Adapter</li>
-                <li>Built natively in Unity 6 for mobile</li>
-                <li>Edge function verifies each score before the row lands in the DB</li>
-              </ul>
-              <div class="meta-row">
-                <span><strong>Genre</strong> · Arcade</span>
-                <span><strong>Package</strong> · com.techavtranew.planes</span>
-                <span><strong>Engine</strong> · Unity 6</span>
+            </article>
+            <article
+              class="game-card"
+              id="planes"
+              aria-labelledby="planes-title"
+            >
+              <div class="game-cover planes-cover">
+                <span class="flight-path path-one" aria-hidden="true"></span
+                ><span class="flight-path path-two" aria-hidden="true"></span
+                ><img
+                  src="assets/planes-logo.png"
+                  alt="Planes arcade game logo"
+                  width="1024"
+                  height="1024"
+                  loading="lazy"
+                /><span class="cover-caption">ONE MORE RUN.</span>
               </div>
-              <div class="cta-row">
-                <a class="btn primary" href="solanadappstore://details?id=com.techavtranew.planes">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v13"/><path d="m7 12 5 5 5-5"/><path d="M5 21h14"/></svg>
-                  Install on Seeker
-                </a>
-                <a class="btn ghost" href="#about">
-                  Learn more
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
-                </a>
+              <div class="game-body">
+                <div class="game-topline">
+                  <span class="game-category">ARCADE SURVIVAL</span
+                  ><span class="platform">Solana Seeker</span>
+                </div>
+                <h3 id="planes-title">Planes</h3>
+                <p class="game-subtitle">Dodge. Collect. Climb.</p>
+                <p>
+                  Stay in the air, thread your way through danger and make every
+                  run count. A fast arcade dodger with collectible coins and an
+                  on-chain leaderboard to keep you chasing your best.
+                </p>
+                <div class="game-actions">
+                  <a
+                    class="text-link"
+                    href="solanadappstore://details?id=com.techavtranew.planes"
+                    >Get it on Seeker <span aria-hidden="true">↗</span></a
+                  ><span class="release-note">Opens the Seeker dApp Store</span>
+                </div>
               </div>
-            </div>
-          </article>
+            </article>
+          </div>
         </div>
-      </div>
-    </section>
-
-    <section class="about" id="about">
-      <div class="wrap">
-        <div class="about-grid">
+      </section>
+      <section class="about" id="about" aria-labelledby="about-title">
+        <div class="wrap about-grid">
           <div>
-            <h2>An indie publisher for the <em>modern phone</em> era.</h2>
-            <p>
-              We make tiny, sharp products — the kind you launch standing in a queue.
-              Some are pure games. Some hook into a wallet. The thread is the same:
-              one idea, one minute, one clean execution.
-            </p>
-            <p>
-              When a title is on-chain, we mean it: real transactions, real custody,
-              real settlement — no off-chain points pretending to be a token. When a
-              title isn't, we focus on feel, fairness, and respect for your time.
-            </p>
+            <p class="eyebrow">The people behind the play</p>
+            <h2 id="about-title">A little studio.<br />A lot to play with.</h2>
+            <img
+              class="studio-icon"
+              src="assets/icon-512.png"
+              alt="Digital Chocolate lowercase d studio mark"
+              width="512"
+              height="512"
+              loading="lazy"
+            />
           </div>
-          <div class="pillars">
-            <div class="pillar">
-              <div class="ico">01 — SMALL BY DESIGN</div>
-              <h4>One idea, done right</h4>
-              <p>One mechanic, one screen, one minute of fun — then back to your day.</p>
-            </div>
-            <div class="pillar">
-              <div class="ico">02 — MOBILE FIRST</div>
-              <h4>Built for the phone in your hand</h4>
-              <p>Touch, performance, and battery are first-class — not afterthoughts.</p>
-            </div>
-            <div class="pillar">
-              <div class="ico">03 — HONEST TECH</div>
-              <h4>Real where it counts</h4>
-              <p>If a title is on-chain, every move settles for real. No theatrics.</p>
+          <div class="about-copy">
+            <p class="about-lead">
+              We’re Digital Chocolate. We make mobile games that give you
+              something to look forward to.
+            </p>
+            <p>
+              A clever puzzle. A split-second dodge. A world you want to return
+              to. We follow the ideas that make us want to play, then put the
+              care into making them feel right.
+            </p>
+            <div class="studio-principles">
+              <div>
+                <span>01</span>
+                <p>
+                  <strong>Personality comes first.</strong>Distinct worlds,
+                  memorable characters, a point of view.
+                </p>
+              </div>
+              <div>
+                <span>02</span>
+                <p>
+                  <strong>Made for the moment.</strong>Thoughtful touch controls
+                  and a good reason for one more round.
+                </p>
+              </div>
+              <div>
+                <span>03</span>
+                <p>
+                  <strong>Room to try something new.</strong>From offline
+                  adventures to games for Solana Seeker.
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-
+      </section>
+      <section class="say-hello" aria-labelledby="hello-title">
+        <div class="wrap hello-inner">
+          <div>
+            <p class="eyebrow">Good things start with a hello</p>
+            <h2 id="hello-title">Let’s talk play.</h2>
+          </div>
+          <div>
+            <a class="email-link" href="mailto:digitalchocolate@gmail.com"
+              >digitalchocolate@gmail.com <span aria-hidden="true">↗</span></a
+            ><a
+              class="social-link"
+              href="https://x.com/digitchocolate"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Follow @digitchocolate on X <span aria-hidden="true">↗</span></a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
     <footer>
-      <div class="wrap foot-grid">
-        <div class="legal">© 2026 DIGITAL CHOCOLATE · ALL RIGHTS RESERVED</div>
-        <div class="foot-links">
-          <a href="index.html#games">Games</a>
-          <a href="index.html#about">Studio</a>
-          <a href="contact.html">Contact</a>
-          <a href="terms.html">Terms</a>
-          <a href="privacy.html">Privacy</a>
-          <a href="cookies.html">Cookies</a>
+      <div class="wrap">
+        <div class="footer-top">
+          <a
+            class="footer-brand"
+            href="index.html"
+            aria-label="Digital Chocolate home"
+            ><img
+              src="assets/brand/wordmark.png"
+              alt="Digital Chocolate"
+              width="2020"
+              height="778"
+              loading="lazy"
+          /></a>
+          <p>Small screens.<br />Big adventures.</p>
+        </div>
+        <div class="foot-grid">
+          <div class="legal">© 2026 Digital Chocolate</div>
+          <div class="foot-links">
+            <a href="index.html#games">Games</a
+            ><a href="contact.html">Contact</a
+            ><a
+              href="https://x.com/digitchocolate"
+              target="_blank"
+              rel="noopener noreferrer"
+              >X / Twitter ↗</a
+            ><a href="terms.html">Terms</a><a href="privacy.html">Privacy</a
+            ><a href="cookies.html">Cookies</a>
+          </div>
         </div>
       </div>
     </footer>
