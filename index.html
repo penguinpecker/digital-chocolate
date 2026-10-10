@@ -111,18 +111,26 @@
           </div>
           <div
             class="hero-art"
-            aria-label="Kip from PenguCrush, with the Hexit and Planes game icons"
+            aria-label="Digital Chocolate studio mark, surrounded by PenguCrush, Hexit and Planes"
             role="img"
           >
             <div class="hero-orbit" aria-hidden="true"></div>
             <img
-              class="hero-kip"
-              src="assets/games/pengucrush-kip.webp"
+              class="hero-brand-mark"
+              src="assets/icon-512.png"
               alt=""
-              width="1024"
-              height="1536"
+              width="512"
+              height="512"
               fetchpriority="high"
             />
+            <div class="orbit-icon pengu-icon">
+              <img
+                src="assets/games/pengucrush-icon.png"
+                alt=""
+                width="512"
+                height="512"
+              /><span>PENGUCRUSH</span>
+            </div>
             <div class="orbit-icon hexit-icon">
               <img
                 src="assets/games/hexit-icon.png"
@@ -160,16 +168,21 @@
             </div>
             <p>Three different worlds.<br />One playful little studio.</p>
           </div>
+
           <article
-            class="game-feature"
+            class="game-row"
             id="pengucrush"
             aria-labelledby="pengu-title"
           >
-            <div class="pengu-scene">
+            <a
+              class="game-visual pengu-scene"
+              href="/pengucrush/"
+              aria-label="Discover PenguCrush"
+            >
               <img
                 class="pengu-landscape"
                 src="assets/games/pengucrush-frosthaven.webp"
-                alt="The island scenery of PenguCrush: Beyond the Horizon"
+                alt="The islands of PenguCrush: Beyond the Horizon"
                 width="1024"
                 height="1536"
                 loading="lazy"
@@ -187,17 +200,18 @@
                 loading="lazy"
               />
               <span class="scene-label">PACK LIGHT. CRUSH BIG.</span>
-            </div>
-            <div class="feature-copy">
+            </a>
+            <div class="game-copy">
               <div class="game-topline">
                 <img
                   class="game-icon"
                   src="assets/games/pengucrush-icon.png"
-                  alt="PenguCrush September expedition app icon"
+                  alt=""
                   width="512"
                   height="512"
                   loading="lazy"
-                /><span class="game-category">MATCH-3 ADVENTURE</span>
+                /><span class="game-category">MATCH-3 ADVENTURE</span
+                ><span class="game-number">01 / 03</span>
               </div>
               <h3 id="pengu-title">PenguCrush</h3>
               <p class="game-subtitle">Beyond the Horizon</p>
@@ -206,105 +220,117 @@
                 stranded chicks and bring the beacons back to life on an
                 expedition across ten extraordinary islands.
               </p>
-              <div class="game-facts">
-                <div><strong>100</strong><span>clever levels</span></div>
-                <div><strong>10</strong><span>islands to explore</span></div>
-                <div><strong>3</strong><span>penguin companions</span></div>
-              </div>
               <ul class="feature-list">
-                <li>
-                  Nine board shapes, shifting tides and multi-stage finales
-                </li>
-                <li>Daily quests, collectible relics and star-chest rewards</li>
+                <li>100 levels, ten islands and nine different board shapes</li>
+                <li>Three companions, daily quests and collectible relics</li>
                 <li>
                   Offline play, free retries and progress saved on your device
                 </li>
               </ul>
               <div class="game-actions">
-                <a class="btn ink" href="pengucrush.html"
-                  >Meet the expedition <span aria-hidden="true">↗</span></a
+                <a class="btn ink" href="/pengucrush/"
+                  >Discover PenguCrush <span aria-hidden="true">↗</span></a
                 ><span class="release-note">Android · In development</span>
               </div>
             </div>
           </article>
-          <div class="game-grid">
-            <article class="game-card" id="hexit" aria-labelledby="hexit-title">
-              <a
-                class="game-cover hexit-cover"
-                href="https://hexit-app.vercel.app"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Explore Hexit's website (opens in a new tab)"
-                ><img
-                  src="assets/games/hexit-cover.png"
-                  alt="Hexit: a live price line crossing a honeycomb game board"
-                  width="1500"
-                  height="500"
-                  loading="lazy"
-                /><span class="cover-link" aria-hidden="true">↗</span></a
-              >
-              <div class="game-body">
-                <div class="game-topline">
-                  <span class="game-category">TAP-TRADING GAME</span
-                  ><span class="platform">Solana Seeker</span>
-                </div>
-                <h3 id="hexit-title">Hexit</h3>
-                <p class="game-subtitle">Pick a hex. Catch the move.</p>
-                <p>
-                  A live price line, a board of hexagons, and a decision to
-                  make. Choose where the market will move and watch your
-                  prediction play out. Quick rounds built around timing and
-                  touch.
-                </p>
-                <div class="game-actions">
-                  <a
-                    class="text-link"
-                    href="https://hexit-app.vercel.app"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >Explore Hexit <span aria-hidden="true">↗</span></a
-                  ><span class="release-note">Coming to Solana Seeker</span>
-                </div>
-              </div>
-            </article>
-            <article
-              class="game-card"
-              id="planes"
-              aria-labelledby="planes-title"
+          <article class="game-row" id="hexit" aria-labelledby="hexit-title">
+            <a
+              class="game-visual hexit-scene"
+              href="/hexit/"
+              aria-label="Discover Hexit"
+              ><img
+                src="assets/games/hexit-cover.png"
+                alt="Hexit: a live price line crossing a honeycomb game board"
+                width="1500"
+                height="500"
+                loading="lazy"
+              /><span class="visual-caption"
+                >READ THE LINE. PICK YOUR HEX.</span
+              ></a
             >
-              <div class="game-cover planes-cover">
-                <span class="flight-path path-one" aria-hidden="true"></span
-                ><span class="flight-path path-two" aria-hidden="true"></span
-                ><img
-                  src="assets/planes-logo.png"
-                  alt="Planes arcade game logo"
-                  width="1024"
-                  height="1024"
+            <div class="game-copy">
+              <div class="game-topline">
+                <img
+                  class="game-icon"
+                  src="assets/games/hexit-icon.png"
+                  alt=""
+                  width="512"
+                  height="512"
                   loading="lazy"
-                /><span class="cover-caption">ONE MORE RUN.</span>
+                /><span class="game-category">TAP-TRADING GAME</span
+                ><span class="game-number">02 / 03</span>
               </div>
-              <div class="game-body">
-                <div class="game-topline">
-                  <span class="game-category">ARCADE SURVIVAL</span
-                  ><span class="platform">Solana Seeker</span>
-                </div>
-                <h3 id="planes-title">Planes</h3>
-                <p class="game-subtitle">Dodge. Collect. Climb.</p>
-                <p>
-                  Stay in the air, thread your way through danger and make every
-                  run count. A fast arcade dodger with collectible coins and an
-                  on-chain leaderboard to keep you chasing your best.
-                </p>
-                <div class="game-actions">
-                  <a
-                    class="text-link"
-                    href="solanadappstore://details?id=com.techavtranew.planes"
-                    >Get it on Seeker <span aria-hidden="true">↗</span></a
-                  ><span class="release-note">Opens the Seeker dApp Store</span>
-                </div>
+              <h3 id="hexit-title">Hexit</h3>
+              <p class="game-subtitle">Pick a hex. Catch the move.</p>
+              <p>
+                Turn a moving price chart into a game of timing. Choose a hex on
+                the honeycomb board, make your prediction and watch the live
+                line. Each tile is a different price range and moment in time.
+              </p>
+              <ul class="feature-list">
+                <li>
+                  A live price line and multipliers shown on every open hex
+                </li>
+                <li>Touch controls with real-time predictions and results</li>
+                <li>Daily, weekly and all-time leaderboards</li>
+              </ul>
+              <div class="game-actions">
+                <a class="btn ink" href="/hexit/"
+                  >Discover Hexit <span aria-hidden="true">↗</span></a
+                ><span class="release-note">Coming to Solana Seeker</span>
               </div>
-            </article>
-          </div>
+            </div>
+          </article>
+          <article class="game-row" id="planes" aria-labelledby="planes-title">
+            <a
+              class="game-visual planes-scene"
+              href="/planes/"
+              aria-label="Discover Planes"
+              ><img
+                src="assets/games/planes-cover.png"
+                alt="Planes promotional artwork: an orange aircraft dodging homing missiles"
+                width="1200"
+                height="1200"
+                loading="lazy"
+              /><span class="visual-caption">ONE MORE RUN.</span></a
+            >
+            <div class="game-copy">
+              <div class="game-topline">
+                <img
+                  class="game-icon"
+                  src="assets/planes-icon.png"
+                  alt=""
+                  width="512"
+                  height="512"
+                  loading="lazy"
+                /><span class="game-category">ARCADE SURVIVAL</span
+                ><span class="game-number">03 / 03</span>
+              </div>
+              <h3 id="planes-title">Planes</h3>
+              <p class="game-subtitle">Dodge. Collect. Climb.</p>
+              <p>
+                Take the controls and keep flying. Outsmart homing missiles,
+                sweep up star coins and survive as the sky gets busier. Spend
+                your coins on a new plane, then head back out to beat your best
+                run.
+              </p>
+              <ul class="feature-list">
+                <li>
+                  Escalating missile waves that test your turns and timing
+                </li>
+                <li>
+                  Unlock a fleet with different handling, magnets and perks
+                </li>
+                <li>Solana wallet support, saved progress and leaderboards</li>
+              </ul>
+              <div class="game-actions">
+                <a class="btn ink" href="/planes/"
+                  >Discover Planes <span aria-hidden="true">↗</span></a
+                ><span class="release-note">Available on Solana Seeker</span>
+              </div>
+            </div>
+          </article>
         </div>
       </section>
       <section class="about" id="about" aria-labelledby="about-title">

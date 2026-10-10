@@ -1,0 +1,10 @@
+{
+  "redirects": [
+    {
+      "source": "/pengucrush.html",
+      "destination": "/pengucrush/",
+      "permanent": true
+    }
+  ],
+  "trailingSlash": true
+}

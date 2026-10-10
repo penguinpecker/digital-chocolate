@@ -30,3 +30,9 @@ The studio wordmark and social art were generated from the approved concept with
 ## Deploy
 
 Repository: https://github.com/penguinpecker/digital-chocolate. Keep the existing Vercel project connection and domain. Verify the linked project before deployment. Policy content is retained; the redesign changes its shared navigation and visual presentation.
+
+## Game pages
+
+Each game has a static directory route: `/pengucrush/`, `/hexit/`, `/planes/`. These work with the local Python preview server and Vercel. The former `/pengucrush.html` address redirects to its new page. The homepage gives all three games a full-width row and uses the studio's d mark in the hero.
+
+Planes gameplay details come from `/Users/pp/planes-solana-seeker/README.md`; its promotional artwork is the owner's existing April 2026 missile-dodging illustration.

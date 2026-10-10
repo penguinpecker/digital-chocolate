@@ -305,7 +305,7 @@ nav.top .inner {
   width: 360px;
   height: 360px;
   border-radius: 50%;
-  background: var(--cream);
+  border: 1px solid #fff0d659;
   left: 50%;
   top: 51%;
   transform: translate(-50%, -50%);
@@ -317,13 +317,16 @@ nav.top .inner {
   border: 1px solid #fff0d659;
   border-radius: 50%;
 }
-.hero-kip {
+.hero-brand-mark {
   position: absolute;
-  height: 480px;
-  width: auto;
+  width: 330px;
+  height: 330px;
   left: 50%;
-  top: 49%;
-  transform: translate(-50%, -50%) rotate(-7deg);
+  top: 51%;
+  object-fit: cover;
+  border: 6px solid var(--cream);
+  border-radius: 72px;
+  transform: translate(-50%, -50%) rotate(-8deg);
   z-index: 1;
 }
 .orbit-icon {
@@ -331,7 +334,6 @@ nav.top .inner {
   z-index: 2;
   width: 96px;
   transform: rotate(10deg);
-  filter: drop-shadow(0 8px 0 #a52a2520);
 }
 .orbit-icon img {
   border-radius: 22px;
@@ -348,6 +350,11 @@ nav.top .inner {
   letter-spacing: 0.13em;
   font-weight: 600;
   margin-top: 7px;
+}
+.pengu-icon {
+  left: 3px;
+  top: 18px;
+  transform: rotate(-12deg);
 }
 .hexit-icon {
   right: -2px;
@@ -417,16 +424,16 @@ nav.top .inner {
   margin: 0;
   line-height: 1.65;
 }
-.game-feature {
+.game-row {
   display: grid;
-  grid-template-columns: 1.04fr 1fr;
+  grid-template-columns: 1fr 1fr;
   background: var(--paper);
   border-radius: 15px;
   overflow: hidden;
 }
 .pengu-scene {
   position: relative;
-  min-height: 594px;
+  min-height: 500px;
   overflow: hidden;
   background: #cbe3d4;
   isolation: isolate;
@@ -450,16 +457,17 @@ nav.top .inner {
 }
 .pengu-wordmark {
   position: absolute;
-  top: 38px;
-  left: 36px;
-  transform: rotate(-5deg);
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-5deg);
+  width: max-content;
   text-align: center;
   z-index: 2;
 }
 .pengu-wordmark > span,
 .pengu-wordmark > strong {
   font:
-    75px/0.79 "Lilita One",
+    62px/0.79 "Lilita One",
     sans-serif;
   letter-spacing: -1.5px;
   color: #fff2cf;
@@ -470,7 +478,7 @@ nav.top .inner {
 }
 .pengu-wordmark > strong {
   color: #f6c44e;
-  font-size: 88px;
+  font-size: 74px;
 }
 .pengu-wordmark > small {
   display: block;
@@ -483,12 +491,12 @@ nav.top .inner {
   transform: rotate(2deg);
 }
 .pengu-character {
-  height: 475px;
+  height: 355px;
   width: auto;
   position: absolute;
-  bottom: -45px;
-  right: 3%;
-  transform: rotate(5deg);
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .scene-label {
   position: absolute;
@@ -499,8 +507,8 @@ nav.top .inner {
   font-weight: 600;
   color: #172d3e;
 }
-.feature-copy {
-  padding: 43px 43px 40px;
+.game-copy {
+  padding: 40px 43px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -512,7 +520,7 @@ nav.top .inner {
   gap: 14px;
   margin-bottom: 22px;
 }
-.feature-copy .game-topline {
+.game-copy .game-topline {
   justify-content: flex-start;
 }
 .game-icon {
@@ -525,7 +533,7 @@ nav.top .inner {
   letter-spacing: 0.12em;
   font-weight: 600;
 }
-.feature-copy h3 {
+.game-copy h3 {
   font-size: 46px;
   letter-spacing: -0.045em;
 }
@@ -535,8 +543,7 @@ nav.top .inner {
   margin: 8px 0 22px;
   line-height: 1.4;
 }
-.feature-copy > p:not(.game-subtitle),
-.game-body > p:not(.game-subtitle) {
+.game-copy > p:not(.game-subtitle) {
   font-size: 14px;
   line-height: 1.8;
   color: var(--muted);
@@ -567,7 +574,7 @@ nav.top .inner {
   list-style: none;
   margin: 0 0 26px;
   padding: 0;
-  font-size: 11px;
+  font-size: 12px;
   line-height: 1.7;
   color: var(--muted);
   display: grid;
@@ -597,115 +604,124 @@ nav.top .inner {
   font-size: 10px;
   line-height: 1.5;
 }
-.game-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
+/* All games share the same space, typography and discovery link. */
+.game-row + .game-row {
   margin-top: 32px;
 }
-.game-card {
-  display: flex;
-  flex-direction: column;
-  min-width: 0;
-}
-.game-cover {
+.game-visual {
   position: relative;
-  border-radius: 14px;
-  overflow: hidden;
-  height: 270px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  overflow: hidden;
+  min-height: 500px;
 }
-.hexit-cover {
+.game-visual:focus-visible {
+  outline-offset: -6px;
+}
+.game-number {
+  margin-left: auto;
+  font-size: 10px;
+  color: var(--muted);
+  white-space: nowrap;
+}
+.game-copy .feature-list {
+  padding: 19px 0 21px;
+  margin: 4px 0 20px;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+.hexit-scene {
   background: #1b0734;
 }
-.hexit-cover > img {
+.hexit-scene > img {
   width: 100%;
-  height: 100%;
-  object-fit: contain;
-  object-position: center;
+  height: auto;
 }
-.cover-link {
+.visual-caption {
   position: absolute;
-  right: 18px;
-  top: 18px;
-  display: grid;
-  place-items: center;
-  width: 34px;
-  height: 34px;
-  border-radius: 50%;
-  background: #fff0d628;
+  left: 27px;
+  bottom: 23px;
   color: var(--cream);
-  font-size: 21px;
-  transition: transform 0.2s;
-}
-.hexit-cover:hover .cover-link {
-  transform: rotate(45deg);
-}
-.planes-cover {
-  background: #b7e4e0;
-  isolation: isolate;
-}
-.planes-cover > img {
-  width: 250px;
-  height: 230px;
-  object-fit: contain;
-  position: relative;
-  z-index: 1;
-}
-.cover-caption {
-  position: absolute;
-  bottom: 18px;
-  left: 22px;
-  color: #215350;
-  font-size: 9px;
-  letter-spacing: 0.17em;
+  font-size: 10px;
+  letter-spacing: 0.13em;
   font-weight: 500;
 }
-.flight-path {
+.planes-scene {
+  background: #b7e4e0;
+}
+.planes-scene > img {
   position: absolute;
-  width: 90%;
-  height: 175px;
-  border: 1px solid #5c98975e;
-  border-radius: 50%;
-  transform: rotate(-30deg);
-  z-index: -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
-.path-two {
-  height: 260px;
-  width: 120%;
-  transform: rotate(30deg);
-}
-.game-body {
-  padding: 28px 8px 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-}
-.game-body .game-topline {
-  margin-bottom: 16px;
-}
-.platform {
-  font-size: 10px;
-  padding: 4px 8px;
-  background: #f3dec1;
+.planes-scene .visual-caption {
+  color: #172d3e;
+  background: var(--cream);
+  padding: 6px 10px;
   border-radius: 4px;
 }
-.game-body h3 {
-  font-size: 34px;
+.game-visual > img {
+  transition: filter 0.2s;
 }
-.game-body .game-subtitle {
-  font-size: 16px;
-  margin-bottom: 14px;
+.game-visual:hover > img {
+  filter: saturate(1.08);
 }
-.game-body .game-actions {
-  padding-top: 20px;
-  margin-top: auto;
+.detail-cover {
+  margin: 30px 0 36px;
+}
+.detail-cover img {
+  width: 100%;
+  border-radius: 14px;
+}
+.detail-cover figcaption {
+  color: var(--muted);
+  font-size: 11px;
+  margin-top: 10px;
+}
+.detail-cover.planes-detail-cover img {
+  max-height: 580px;
+  object-fit: cover;
+  object-position: center 60%;
+}
+.game-guide {
+  padding: 0;
+  list-style: none;
+  counter-reset: guide;
+  margin: 25px 0;
+}
+.game-guide li {
+  position: relative;
+  padding: 18px 0 18px 48px;
+  border-top: 1px solid var(--line);
+  counter-increment: guide;
+}
+.game-guide li:before {
+  content: "0" counter(guide);
+  position: absolute;
+  left: 0;
+  color: var(--coral-dark);
+  font-size: 13px;
+  font-weight: 500;
+}
+.game-guide strong {
+  color: var(--ink);
+  display: block;
+}
+.more-games {
+  margin-top: 48px;
+  padding-top: 23px;
   border-top: 1px solid var(--line);
 }
-.game-body > p:last-of-type {
-  margin-bottom: 28px;
+.page .more-games h2 {
+  font-size: 23px;
+  margin: 0 0 18px;
+}
+.more-game-links {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 .text-link {
   font-size: 12px;
@@ -1088,8 +1104,10 @@ footer {
     width: 285px;
     height: 285px;
   }
-  .hero-kip {
-    height: 410px;
+  .hero-brand-mark {
+    width: 270px;
+    height: 270px;
+    border-radius: 60px;
   }
   .orbit-icon,
   .orbit-icon img {
@@ -1108,7 +1126,7 @@ footer {
   .hero-note {
     font-size: 10px;
   }
-  .feature-copy {
+  .game-copy {
     padding: 32px;
   }
   .pengu-wordmark > span {
@@ -1117,13 +1135,10 @@ footer {
   .pengu-wordmark > strong {
     font-size: 75px;
   }
-  .pengu-wordmark {
-    left: 22px;
-  }
+
   .pengu-character {
-    height: 430px;
-    right: -4%;
-    bottom: 0;
+    height: 355px;
+    bottom: -15px;
   }
   .game-facts {
     gap: 22px;
@@ -1133,9 +1148,6 @@ footer {
   }
   .about-grid {
     gap: 60px;
-  }
-  .game-cover {
-    height: 225px;
   }
   .hello-inner h2 {
     font-size: 40px;
@@ -1195,8 +1207,10 @@ footer {
     width: 270px;
     height: 270px;
   }
-  .hero-kip {
-    height: 365px;
+  .hero-brand-mark {
+    width: 250px;
+    height: 250px;
+    border-radius: 56px;
   }
   .hexit-icon {
     right: 14px;
@@ -1244,36 +1258,35 @@ footer {
   .section-head .eyebrow {
     font-size: 9px;
   }
-  .game-feature {
+  .game-row {
     grid-template-columns: 1fr;
   }
-  .pengu-scene {
+  .game-visual {
     min-height: 420px;
   }
+  .game-row + .game-row {
+    margin-top: 28px;
+  }
   .pengu-wordmark {
-    top: 31px;
-    left: 33px;
+    top: 26px;
   }
   .pengu-wordmark > span {
-    font-size: 65px;
+    font-size: 58px;
   }
   .pengu-wordmark > strong {
-    font-size: 76px;
+    font-size: 69px;
   }
   .pengu-character {
-    height: 370px;
-    right: 5%;
-    bottom: -40px;
+    height: 300px;
+    bottom: -20px;
   }
   .scene-label {
-    font-size: 8px;
-    left: 22px;
-    bottom: 19px;
+    display: none;
   }
-  .feature-copy {
+  .game-copy {
     padding: 29px 26px 31px;
   }
-  .feature-copy h3 {
+  .game-copy h3 {
     font-size: 40px;
   }
   .game-subtitle {
@@ -1286,28 +1299,21 @@ footer {
   .game-facts span {
     font-size: 10px;
   }
-  .feature-copy .game-actions {
+  .game-copy .game-actions {
     gap: 17px;
   }
-  .game-grid {
-    grid-template-columns: 1fr;
-    gap: 39px;
-    margin-top: 27px;
+  .game-copy .game-topline {
+    gap: 10px;
   }
-  .game-cover {
-    height: 240px;
+  .game-number {
+    font-size: 9px;
   }
-  .game-body {
-    padding: 23px 3px 0;
+  .pengu-icon {
+    left: 5px;
+    top: 7px;
   }
-  .game-body h3 {
-    font-size: 33px;
-  }
-  .game-body .game-topline {
-    margin-bottom: 13px;
-  }
-  .game-body .game-actions {
-    padding-top: 17px;
+  .detail-cover.planes-detail-cover img {
+    max-height: none;
   }
   .about {
     padding: 58px 0;
@@ -1430,8 +1436,10 @@ footer {
   .hero-art {
     height: 325px;
   }
-  .hero-kip {
-    height: 330px;
+  .hero-brand-mark {
+    width: 225px;
+    height: 225px;
+    border-radius: 50px;
   }
   .hero-orbit {
     width: 239px;
@@ -1449,7 +1457,7 @@ footer {
     height: 66px;
     font-size: 10px;
   }
-  .pengu-scene {
+  .game-visual {
     min-height: 380px;
   }
   .pengu-wordmark > span {
@@ -1459,10 +1467,9 @@ footer {
     font-size: 69px;
   }
   .pengu-character {
-    height: 325px;
-    right: 0;
+    height: 270px;
   }
-  .feature-copy {
+  .game-copy {
     padding: 27px 22px;
   }
   .game-facts {
